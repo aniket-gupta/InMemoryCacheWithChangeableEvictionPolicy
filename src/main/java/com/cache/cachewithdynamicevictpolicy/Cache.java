@@ -13,7 +13,7 @@ public class Cache<K, V> {
 
 	private CachePolicy<K, V> cahcePolicy;
 
-	ReentrantReadWriteLock lock = new ReentrantReadWriteLock();
+	private ReentrantReadWriteLock lock = new ReentrantReadWriteLock();
 
 	public Cache(int size) {
 		if (size < 0)
